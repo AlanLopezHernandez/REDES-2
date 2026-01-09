@@ -1,0 +1,6 @@
+javac --module-path "C:\Users\Angeles\Desktop\javafx-sdk-21.0.9\lib" --add-modules javafx.controls Cliente.java
+
+
+java --module-path "C:\Users\Angeles\Desktop\javafx-sdk-21.0.9\lib" --add-modules javafx.controls Cliente
+
+

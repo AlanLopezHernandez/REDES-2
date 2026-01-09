@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run Cliente (JavaFX)",
+      "request": "launch",
+      "mainClass": "Cliente",
+      "vmArgs": "--module-path \"C:\\Users\\Angeles\\Desktop\\javafx-sdk-21.0.9\\lib\" --add-modules javafx.controls"
+    }
+  ]
+}
