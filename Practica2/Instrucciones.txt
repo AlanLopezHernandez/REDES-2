@@ -1,0 +1,23 @@
+gCompilar servidor
+cd "C:\Users\Angeles\Desktop\Practic2"
+
+set JAVAFX_HOME=C:\Users\Angeles\Desktop\javafx-sdk-21.0.9
+
+javac -d out src\redes2\gobackn\Config.java src\redes2\gobackn\Packet.java src\redes2\gobackn\Servidor.java
+
+java -cp out redes2.gobackn.Servidor
+
+
+Compilar cliente
+cd "C:\Users\Angeles\Desktop\Practic2"
+
+$env:JAVAFX_HOME = "C:\Users\Angeles\Desktop\javafx-sdk-21.0.9"
+
+***Test-Path "$env:JAVAFX_HOME\lib"
+***Get-ChildItem "$env:JAVAFX_HOME\lib"
+
+javac -encoding UTF-8 --module-path "$env:JAVAFX_HOME\lib" --add-modules=javafx.base,javafx.graphics,javafx.media -d out src\redes2\gobackn\FxInit.java src\redes2\gobackn\Mp3ControllerFx.java src\redes2\gobackn\MenuMp3.java src\redes2\gobackn\Cliente.java src\redes2\gobackn\Config.java src\redes2\gobackn\Packet.java
+
+java --module-path "$env:JAVAFX_HOME\lib" --add-modules=javafx.base,javafx.graphics,javafx.media -cp out redes2.gobackn.Cliente
+
+java --module-path "C:\Users\Angeles\Desktop\javafx-sdk-21.0.9\lib"  --add-modules=javafx.base,javafx.graphics,javafx.media -cp out redes2.gobackn.Cliente
